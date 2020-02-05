@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  background: ghostwhite
+}
+
+.App {
+  background: ghostwhite;
+  min-height: 100vh;
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  background: rgb(235, 235, 235);
+  padding: 10px 100px 20px 100px;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.video-tile {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.video-tile a {
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-template-columns: 48% 4% 48%;
+  grid-row-gap: 10px;
+}
+
+.video-tile img {
+  max-width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.video-details {
+  overflow: hidden;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#buttonContainer {
+  text-align: center;
+}
+
+#buttonContainer .vl{
+  margin: 0 10px;
+  border-left: 1px solid rgb(200,200,200);
+  vertical-align: middle;
+}
